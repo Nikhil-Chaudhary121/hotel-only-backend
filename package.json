@@ -1,0 +1,25 @@
+{
+  "name": "nodeprectice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "type": "commonjs",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.0.0-beta.2",
+    "ejs": "^3.1.9",
+    "ejs-mate": "^4.0.0",
+    "express": "^5.0.0-beta.2",
+    "mongoose": "^8.2.3",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^8.0.0",
+    "path": "^0.12.7"
+  }
+}
