@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
 const db = require("./db.js");
+require("dotenv").config();
+
+const PORT = process.env.PORT || 3000;
 
 const bodyParser = require("body-parser");
 app.use(bodyParser.json());
@@ -8,7 +11,6 @@ app.use(bodyParser.json());
 const Person = require("./Models/personModel.js");
 const MenuItem = require("./Models/MenuItemModel.js");
 
-const PORT = 3000;
 
 app.get("/", (req, res) => {
   res.send("Welcome to our Hotel We have a list of Foods");
